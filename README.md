@@ -2,7 +2,7 @@
 
 **Technical Founder & Full-Stack Engineer** based in Valencia, Spain.
 
-I founded an e-commerce automation company at 25 and built its entire tech stack from scratch — processing thousands of SKUs across multiple marketplaces while managing a team of 4. Before that, I engineered systems for **AIRBUS** and **Mercadona** at Sopra Steria and Capgemini.
+I founded an e-commerce automation company at 25 and built its entire tech stack from scratch — processing thousands of SKUs across multiple marketplaces while scaling a team from 3 to 6. Before that, I engineered systems for **AIRBUS** and **Mercadona** at Sopra Steria and Capgemini.
 
 I don't just write code. I build systems that run businesses.
 
@@ -62,7 +62,7 @@ Marketplace APIs  →  Extraction Pipeline  →  AI Enrichment  →  Multi-Chann
 
 | Period | Role | Company | Highlights |
 |--------|------|---------|------------|
-| 2023 – now | **Technical Founder** | REUSALIA | Built full ERP, managed team of 4, multi-marketplace automation |
+| 2023 – now | **Technical Founder** | REUSALIA | Built full ERP, scaled team 3→6, multi-marketplace automation |
 | 2022 – 2024 | **Senior Engineer** | LittleBig Connection | Java/Spring Boot + Angular, distributed teams |
 | 2021 – 2022 | **Software Engineer** | Sopra Steria | AIRBUS — monolith → microservices, NgRx, Jenkins/OpenShift |
 | 2020 – 2022 | **Software Engineer** | Capgemini | Mercadona — supply chain optimization, OracleSQL, C++ batch |
