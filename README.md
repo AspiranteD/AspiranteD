@@ -90,7 +90,7 @@ Infra:       Docker, Jenkins, OpenShift, Git, CI/CD
 
 ### Background
 
-**Founder - REUSALIA** (Apr 2023 - Feb 2024): Physical e-commerce with a custom production stack.
+**Founder - REUSALIA** (Apr 2023 - Present): Physical e-commerce with a custom production stack.
 
 **Engineering:** LittleBig Connection, Sopra Steria (AIRBUS), Capgemini (Mercadona).
 
