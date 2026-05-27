@@ -1,78 +1,30 @@
-# Hi, I'm Guillem Climent
+# Guillem Climent
 
-**Technical Founder & Full-Stack Engineer** based in Valencia, Spain.
+**Technical Founder & Engineer** · Valencia, Spain
 
-I founded an e-commerce automation company at 25 and built its entire tech stack from scratch — processing thousands of SKUs across multiple marketplaces while scaling a team from 3 to 6. Before that, I engineered systems for **AIRBUS** and **Mercadona** at Sopra Steria and Capgemini.
+I built a full production platform that runs a physical e-commerce business — ~100 orders/day, 12 marketplace accounts, 6 employees, 3 marketplaces synced. One engineer. 180+ Python scripts.
 
-I don't just write code. I build systems that run businesses.
-
----
-
-### What I Build
+### The System
 
 ```
-Marketplace APIs  →  Extraction Pipeline  →  AI Enrichment  →  Multi-Channel Sync
-(Wallapop, eBay)     (Orders, Chats,          (GPT Categorization,    (Inventory, Pricing,
-                      Listings)                Descriptions)           Feed Generation)
-                           ↓                        ↓                        ↓
-                    ┌──────────────────────────────────────────────────────────────┐
-                    │              PostgreSQL (NeonDB) — Single Source of Truth     │
-                    └──────────────────────────────────────────────────────────────┘
-                           ↑                        ↑                        ↑
-                    Retool ERP  ←──  Command Queue  ──→  Local Backend + Printer
-                    (342 files)      (Lock/Heartbeat)     (Brother QL-700)
+Wallapop (rev. eng.) ──┐                                    ┌── Retool ERP (342 files)
+eBay (OAuth2 + Feed) ──┤── FastAPI ── PostgreSQL (25+ models) ──┤── Multi-marketplace Sync
+Amazon (scraper + AI) ──┤      ↑           ↑                ├── AI Enrichment (GPT-4)
+Google Drive ───────────┘   APScheduler  Alembic (35+ migr.)└── Label Printer (USB bridge)
 ```
 
----
+### Key Projects
 
-### Featured Projects
+| Project | What It Does | Impact |
+|---|---|---|
+| [**Inventory Operations API**](https://github.com/AspiranteD/inventory-ops-api) | Full REST API — items, orders, invoicing, scheduler | Used daily by 6 employees |
+| [**Wallapop Extractors**](https://github.com/AspiranteD/wallapop-data-extractors) | Reverse-engineered private API, multi-account | Replaces ~5h/day manual work |
+| [**AI Product Enrichment**](https://github.com/AspiranteD/ai-product-enrichment) | Amazon scraping → GPT-4 → auto-listings | Saves ~40h/week |
+| [**Cloud-Local Bridge**](https://github.com/AspiranteD/cloud-local-command-bridge) | DB command queue with lock/heartbeat/failover | Connects cloud UI to hardware |
 
-| Project | Description | Stack |
-|---------|-------------|-------|
-| [**AI Product Enrichment**](https://github.com/AspiranteD/ai-product-enrichment) | Amazon scraping → GPT categorization → description generation | Python, OpenAI, FastAPI |
-| [**Wallapop Data Extractors**](https://github.com/AspiranteD/wallapop-data-extractors) | Reverse-engineered private API, multi-account, anti-detection | Python, Threading, RE |
-| [**eBay Automation Toolkit**](https://github.com/AspiranteD/ebay-automation-toolkit) | OAuth2 + Feed API + Fulfillment, end-to-end automation | Python, eBay API, OAuth2 |
-| [**Inventory Operations API**](https://github.com/AspiranteD/inventory-ops-api) | Full REST API: items, orders, sales, invoicing, scheduler | FastAPI, SQLModel, PG |
-| [**Cloud-Local Command Bridge**](https://github.com/AspiranteD/cloud-local-command-bridge) | Cloud↔local coordination via DB command queue with failover | Python, FastAPI, PG |
-| [**Sheets → Postgres Migration**](https://github.com/AspiranteD/sheets-to-postgres-migration) | 5-phase production migration with financial reconciliation | Python, gspread, pandas |
+### Background
 
-**→ [All 11 projects](https://github.com/AspiranteD?tab=repositories)**
+Founded REUSALIA at 25. Before that: Sopra Steria (AIRBUS), Capgemini (Mercadona), LittleBig Connection.  
+B.Eng. Multimedia Engineering — Universitat de València.
 
----
-
-### Tech Stack
-
-**Backend** · Python · FastAPI · Java · Spring Boot · SQLModel · REST APIs
-
-**Frontend** · Angular · Vue.js · Retool · HTML/CSS/JS
-
-**Databases** · PostgreSQL · MySQL · OracleSQL · NeonDB
-
-**AI & Data** · OpenAI GPT · pandas · NumPy · ETL Pipelines · OpenCV
-
-**Automation** · BeautifulSoup · Selenium · Reverse Engineering · APScheduler
-
-**DevOps** · Docker · Jenkins · OpenShift · Git · CI/CD
-
-**Integrations** · eBay API · Google Sheets/Drive · Wallapop (RE) · Brother QL-700
-
----
-
-### Career
-
-| Period | Role | Company | Highlights |
-|--------|------|---------|------------|
-| 2023 – now | **Technical Founder** | REUSALIA | Built full ERP, scaled team 3→6, multi-marketplace automation |
-| 2022 – 2024 | **Senior Engineer** | LittleBig Connection | Java/Spring Boot + Angular, distributed teams |
-| 2021 – 2022 | **Software Engineer** | Sopra Steria | AIRBUS — monolith → microservices, NgRx, Jenkins/OpenShift |
-| 2020 – 2022 | **Software Engineer** | Capgemini | Mercadona — supply chain optimization, OracleSQL, C++ batch |
-
-**Education:** B.Eng. Multimedia Engineering — Universitat de València (2016–2021)
-
----
-
-<p>
-  <a href="https://aspiranted.github.io">Portfolio</a> · 
-  <a href="https://www.linkedin.com/in/gcliment/">LinkedIn</a> · 
-  <a href="mailto:guillemclim@gmail.com">Email</a>
-</p>
+**[Portfolio](https://aspiranted.github.io)** · **[LinkedIn](https://linkedin.com/in/gcliment)** · **[guillemclim@gmail.com](mailto:guillemclim@gmail.com)**
