@@ -6,6 +6,8 @@
 
 Founder-led systems handling **thousands of SKUs**, multi-marketplace workflows, order processing, catalog enrichment, and warehouse execution in production.
 
+Lead a **5-person team** (warehouse, logistics, admin) for **1+ years** — hiring, scheduling, training, accountability — with **3+ years** scaling the operation **2→5** since founding.
+
 Rebuilt warehouse and inventory operations after disaster-related infrastructure loss.
 
 Everything in this profile is **production code** extracted from real operations. No tutorials, no demos.
@@ -18,9 +20,10 @@ Everything in this profile is **production code** extracted from real operations
 
 | Area | What was built |
 |------|----------------|
-| **Production ERP** | 10+ modules, 342 frontend files, 25+ DB models, ~60 API endpoints - used daily by a **5-person** operation |
+| **Production ERP** | 10+ modules, 342 frontend files, 25+ DB models, ~60 API endpoints — daily operating system for a **5-person team I lead** |
 | **Inventory and database** | PostgreSQL backbone managing **40,000+** unique inventory references and operational records |
 | **Marketplace extraction and sync** | **12** Wallapop accounts + eBay - custom extraction and near-real-time sync into PostgreSQL |
+| **People leadership** | **5-person** warehouse/logistics/admin team for **1+ years**; hiring, training, schedules, operational accountability |
 
 ---
 
@@ -40,7 +43,7 @@ Everything in this profile is **production code** extracted from real operations
 → extractors / scrapers / AI enrichment  
 → **PostgreSQL** (40k+ inventory refs, migrations)  
 → sync engine  
-→ Retool ERP (342 files, 10+ modules) + label printer via **command bridge** (lock, queue, heartbeat)
+→ custom ERP frontend (342 files, 10+ modules) + label printer via **command bridge** (lock, queue, heartbeat)
 
 Detailed diagram: [ARCHITECTURE.md](ARCHITECTURE.md)
 
@@ -90,7 +93,7 @@ Infra:       Docker, Jenkins, OpenShift, Git, CI/CD
 
 ### Background
 
-**Founder - REUSALIA** (Apr 2023 - Present): Physical e-commerce with a custom production stack.
+**Founder - REUSALIA** (Apr 2023 - Present): Physical e-commerce with a custom production stack and a **5-person team under daily operational leadership**.
 
 **Engineering:** LittleBig Connection, Sopra Steria (AIRBUS), Capgemini (Mercadona).
 
