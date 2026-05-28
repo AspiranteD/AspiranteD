@@ -6,7 +6,7 @@
 
 Founder-led systems handling **thousands of SKUs**, multi-marketplace workflows, order processing, catalog enrichment, and warehouse execution in production.
 
-Lead a **5-person team** (warehouse, logistics, admin) for **1+ years** — hiring, scheduling, training, accountability — with **3+ years** scaling the operation **2→5** since founding.
+Lead a **5-person team** (warehouse, logistics, admin) — hiring, scheduling, training, operational accountability.
 
 Rebuilt warehouse and inventory operations after disaster-related infrastructure loss.
 
@@ -23,7 +23,7 @@ Everything in this profile is **production code** extracted from real operations
 | **Production ERP** | 10+ modules, 342 frontend files, 25+ DB models, ~60 API endpoints — daily operating system for a **5-person team I lead** |
 | **Inventory and database** | PostgreSQL backbone managing **40,000+** unique inventory references and operational records |
 | **Marketplace extraction and sync** | **12** Wallapop accounts + eBay - custom extraction and near-real-time sync into PostgreSQL |
-| **People leadership** | **5-person** warehouse/logistics/admin team for **1+ years**; hiring, training, schedules, operational accountability |
+| **People leadership** | **5-person** warehouse/logistics/admin team under my direct leadership; hiring, training, schedules, operational accountability |
 
 ---
 
