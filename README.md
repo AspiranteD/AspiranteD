@@ -73,10 +73,10 @@ Detailed diagram: [ARCHITECTURE.md](ARCHITECTURE.md)
 
 | Repo | Maps to CV | Stack |
 |------|------------|-------|
+| [ai-ops-agent](https://github.com/AspiranteD/ai-ops-agent) | Agentic ops assistant: LLM tool-use loop + RAG over the product catalog, with an offline fallback | Python, OpenAI, RAG, Embeddings |
 | [ai-product-enrichment](https://github.com/AspiranteD/ai-product-enrichment) | LLM catalog enrichment, categorization, descriptions | Python, OpenAI |
 | [sheets-to-postgres-migration](https://github.com/AspiranteD/sheets-to-postgres-migration) | Sheets to PostgreSQL ETL: validation, FK resolution | Python, PostgreSQL |
 | [product-image-pipeline](https://github.com/AspiranteD/product-image-pipeline) | Warehouse ops: photos, thermal labels, barcodes | Python, Pillow |
-| [job-inbox-monitor](https://github.com/AspiranteD/job-inbox-monitor) | Gmail bot: two-phase email classification, daily reports, follow-up alerts | Python, Gmail API, OpenAI |
 
 ---
 
