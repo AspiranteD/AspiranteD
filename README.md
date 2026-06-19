@@ -105,3 +105,7 @@ Infra:       Docker, Jenkins, OpenShift, Git, CI/CD
 ### Operating principle
 
 > I design systems with one practical objective: make operations more efficient, more controllable, and less dependent on manual work. Technical decisions map to business outcomes.
+
+---
+
+<sub>🔒 Owner workspace: [panel-proyectos](https://github.com/AspiranteD/panel-proyectos) — private dashboard + master index of every project (not accessible to visitors).</sub>
