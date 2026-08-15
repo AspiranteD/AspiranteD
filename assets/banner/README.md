@@ -10,9 +10,9 @@ Cover image for the LinkedIn profile, generated from HTML so the content stays e
 | `linkedin-banner.html`, `linkedin-banner-es.html` | — | sources of truth |
 
 Content is deliberately short: name, `CEO & Founder · Reusalia`, and one line — leading a
-team of 5 and automating the operation with cutting-edge systems. The right column carries
-what that means in practice: marketplaces (12 accounts), AI automation (~40h/week saved),
-PostgreSQL core (40K+ references) and the custom ERP (10+ modules).
+team of 5 and automating the operation with cutting-edge systems. The right column is the
+career arc as four steps along a gradient spine: software engineer → entrepreneur → leading
+my own company → systems and automation architect.
 
 ## Layout constraints
 
