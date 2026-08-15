@@ -1,0 +1,73 @@
+<meta charset="utf-8">
+<title>Reusalia banner — LinkedIn cover</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #0d2117; }
+
+  .banner {
+    position: relative;
+    width: 1584px;
+    height: 396px;
+    overflow: hidden;
+    background:
+      radial-gradient(900px 520px at 50% -30%, rgba(98,181,52,.16), transparent 64%),
+      radial-gradient(700px 480px at 96% 120%, rgba(98,181,52,.10), transparent 62%),
+      #143020;
+    font-family: 'Poppins', system-ui, sans-serif;
+    color: #f3f1e7;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  /* oversized mark bleeding off the right edge, like the source artwork */
+  .watermark {
+    position: absolute; right: -120px; top: 50%; transform: translateY(-50%);
+    width: 520px; height: 520px; opacity: .075; pointer-events: none;
+  }
+
+  .lockup { position: relative; z-index: 1; text-align: center; padding-bottom: 4px; }
+
+  .mark-row { display: flex; align-items: center; justify-content: center; gap: 14px; }
+  .mark { width: 92px; height: 92px; flex: none; }
+  .word {
+    font-size: 84px; font-weight: 700; letter-spacing: -.02em; line-height: 1;
+    color: #f3f1e7; position: relative; display: inline-block;
+  }
+  /* leaf replacing the tittle of the "i" */
+  .word .ltr { position: relative; }
+  .word .tittle { position: absolute; width: 20px; height: 25px; left: 50%; transform: translateX(-45%); top: -6px; }
+
+  .tagline {
+    margin-top: 22px;
+    font-size: 33px; font-weight: 600; letter-spacing: -.015em; color: #f3f1e7;
+  }
+  .underline {
+    width: 86px; height: 5px; border-radius: 3px; background: #62b534;
+    margin: 22px auto 0;
+  }
+</style>
+
+<div class="banner">
+  <!-- watermark -->
+  <svg class="watermark" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+        <path d="M68 18.8 A36 36 0 1 0 68 81.2" stroke="#62b534" stroke-width="9" stroke-linecap="round"/>
+        <path d="M66 8l18 11-18 11z" fill="#62b534"/>
+        <path d="M50 28c11 8 16 18 14 28-2 9-9 14-17 14s-14-6-14-14c0-11 7-21 17-28z" fill="#62b534"/>
+        <path d="M50 34c-3 9-4 20-3 32" stroke="#a5dd7d" stroke-width="2.6" stroke-linecap="round"/>
+      </svg>
+
+  <div class="lockup">
+    <div class="mark-row">
+      <!-- leaf + circular arrow, approximating the Reusalia mark -->
+      <svg class="mark" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+        <path d="M68 18.8 A36 36 0 1 0 68 81.2" stroke="#62b534" stroke-width="9" stroke-linecap="round"/>
+        <path d="M66 8l18 11-18 11z" fill="#62b534"/>
+        <path d="M50 28c11 8 16 18 14 28-2 9-9 14-17 14s-14-6-14-14c0-11 7-21 17-28z" fill="#62b534"/>
+        <path d="M50 34c-3 9-4 20-3 32" stroke="#a5dd7d" stroke-width="2.6" stroke-linecap="round"/>
+      </svg>
+      <span class="word">Reusal<span class="ltr">i<svg class="tittle" viewBox="0 0 20 26" fill="none" aria-hidden="true"><path d="M18 1C8 2 2 8 2 16c0 4 2 7 5 9 0-9 4-16 11-21-4 6-7 13-7 20 6 0 11-4 12-10 2-7 0-13-5-13z" fill="#62b534"/></svg></span>a</span>
+    </div>
+
+    <p class="tagline">Pagas por el producto, no por estrenar la caja.</p>
+    <div class="underline"></div>
+  </div>
+</div>

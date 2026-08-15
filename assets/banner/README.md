@@ -30,3 +30,14 @@ CHROME=/path/to/chrome ./render.sh
 ```
 
 Edit the HTML (text, metrics, colours) and re-run to regenerate the PNGs.
+
+## Reusalia banner
+
+`reusalia-banner.html` → `reusalia-banner.png` (1584 × 396, LinkedIn company cover) reuses the
+same render pipeline with Reusalia's brand: dark green ground `#143020`, brand green `#62b534`,
+cream `#f3f1e7`, Poppins.
+
+**The mark is a placeholder.** It approximates the leaf-and-arrow logo but is not the real
+artwork. Drop the official logo in this directory as `reusalia-logo.svg` (or `.png` with
+transparency) and replace the inline `<svg class="mark">` — and the watermark copy of it — with
+an `<img>` pointing at the file.
