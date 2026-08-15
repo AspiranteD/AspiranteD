@@ -33,11 +33,22 @@ Edit the HTML (text, metrics, colours) and re-run to regenerate the PNGs.
 
 ## Reusalia banner
 
-`reusalia-banner.html` → `reusalia-banner.png` (1584 × 396, LinkedIn company cover) reuses the
-same render pipeline with Reusalia's brand: dark green ground `#143020`, brand green `#62b534`,
-cream `#f3f1e7`, Poppins.
+The company banner refitted to LinkedIn's cover format — the brand artwork itself, not a rebuild.
 
-**The mark is a placeholder.** It approximates the leaf-and-arrow logo but is not the real
-artwork. Drop the official logo in this directory as `reusalia-logo.svg` (or `.png` with
-transparency) and replace the inline `<svg class="mark">` — and the watermark copy of it — with
-an `<img>` pointing at the file.
+| File | Notes |
+|------|-------|
+| `reusalia-source.jpg` | original artwork, 2000 × 667 |
+| `reusalia-banner.png` | 1584 × 396, ready to upload |
+| `reusalia-fit.py` | crops and scales one to the other |
+
+The source is 3:1 and a LinkedIn cover is 4:1, so the script measures where the artwork's
+content actually sits, crops the canvas vertically around it — never stretching — and scales
+the result down. Re-run it after any new export:
+
+```bash
+python3 reusalia-fit.py                      # reusalia-source.jpg → reusalia-banner.png
+python3 reusalia-fit.py other.jpg out.png
+```
+
+Output is capped by the source resolution, so there is no @2x for this one. If you have the
+artwork at 3168 px wide or as a vector, drop it in and re-run for a retina version.
